@@ -5,7 +5,7 @@ function App() {
   const [calendar, setCalendar] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/calendar')
+    axios.get('https://sharepoint-kalender-heitlinger.onrender.com/api/calendar')
       .then(res => setCalendar(res.data));
   }, []);
 
